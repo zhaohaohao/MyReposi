@@ -19,6 +19,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
     defaultConfig {
         applicationId "com.qihoo360.replugin.sample.host"
         minSdkVersion 9
